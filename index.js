@@ -5,7 +5,7 @@ let Logger = (exports.Logger = {});
 const d = new Date();
 
 let filename = `logs/${d.getFullYear()}_${d.getMonth() + 1}_${d.getDate()}.log`;
-
+fs.mkdirSync('./logs', { recursive: true });
 //Days
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
