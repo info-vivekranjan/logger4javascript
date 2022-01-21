@@ -1,0 +1,22 @@
+{
+  "name": "logger4javascript",
+  "version": "1.0.0",
+  "description": "logger4javascript version 1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/info-vivekranjan/log4JavaScript.git"
+  },
+  "keywords": [
+    "logger4javascript"
+  ],
+  "author": "Vivek Ranjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/info-vivekranjan/log4JavaScript/issues"
+  },
+  "homepage": "https://github.com/info-vivekranjan/log4JavaScript#readme"
+}
