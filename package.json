@@ -1,6 +1,6 @@
 {
   "name": "logger4javascript",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "logger4javascript version 1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/info-vivekranjan/log4JavaScript.git"
+    "url": "git+https://github.com/info-vivekranjan/logger4javascript.git"
   },
   "keywords": [
     "logger4javascript"
@@ -16,7 +16,7 @@
   "author": "Vivek Ranjan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/info-vivekranjan/log4JavaScript/issues"
+    "url": "https://github.com/info-vivekranjan/logger4javascript/issues"
   },
-  "homepage": "https://github.com/info-vivekranjan/log4JavaScript#readme"
+  "homepage": "https://github.com/info-vivekranjan/logger4javascript#readme"
 }
