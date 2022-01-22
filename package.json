@@ -1,6 +1,6 @@
 {
   "name": "logger4javascript",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Creates logs with Node Js",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,12 @@
     "url": "git+https://github.com/info-vivekranjan/logger4javascript.git"
   },
   "keywords": [
-    "logger4javascript"
+    "logger4javascript",
+    "logger",
+    "logs",
+    "logger4js",
+    "loggerforjs",
+    "logger4node"
   ],
   "author": "Vivek Ranjan",
   "license": "ISC",
