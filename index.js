@@ -5,7 +5,7 @@ let Logger = (exports.Logger = {});
 const d = new Date();
 
 let filename = `logs/${d.getFullYear()}_${d.getMonth() + 1}_${d.getDate()}.log`;
-fs.mkdirSync('./logs', { recursive: true });
+
 //Days
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -29,13 +29,14 @@ function formatAMPM(date) {
 }
 
 Logger.info = function (msg) {
+  fs.mkdirSync("./logs", { recursive: true });
   let messageLog = `${dayName} ${d.getFullYear()}-${
     d.getMonth() + 1
   }-${d.getDate()} - ${formatAMPM(new Date())}`;
 
   fs.exists(filename, (exists) => {
     if (exists) {
-      let message = messageLog + " : "+ "[info] " + msg + "\n";
+      let message = messageLog + " : " + "[info] " + msg + "\n";
       let infoStream = fs.createWriteStream(filename, { flags: "a" });
       infoStream.write(message);
     } else {
@@ -46,14 +47,16 @@ Logger.info = function (msg) {
   });
 };
 
-Logger.error = function(msg) {
+Logger.error = function (msg) {
+  fs.mkdirSync("./logs", { recursive: true });
+
   let messageLog = `${dayName} ${d.getFullYear()}-${
     d.getMonth() + 1
   }-${d.getDate()} - ${formatAMPM(new Date())}`;
 
   fs.exists(filename, (exists) => {
     if (exists) {
-      let message = messageLog + " : " +"[error] "+ msg + "\n";
+      let message = messageLog + " : " + "[error] " + msg + "\n";
       let infoStream = fs.createWriteStream(filename, { flags: "a" });
       infoStream.write(message);
     } else {
@@ -63,4 +66,4 @@ Logger.error = function(msg) {
     }
   });
 };
-module.exports = Logger
+module.exports = Logger;
