@@ -1,6 +1,6 @@
 {
   "name": "logger4javascript",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Creates logs with Node Js",
   "main": "index.js",
   "scripts": {
