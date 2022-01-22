@@ -4,9 +4,9 @@
 
    * const logger4javascript = require('logger4javascript');
    * For success responses
-     * logger4javascript.info('[info] You are testing logger4javascript package for SUCCESS RESPONSE');
+     * logger4javascript.info('You are testing logger4javascript package for SUCCESS RESPONSE');
    * For failure responses
-     * logger4javascript.info('[error] You are testing logger4javascript package for ERROR RESPONSE');
+     * logger4javascript.error('You are testing logger4javascript package for ERROR RESPONSE');
 * After using this:
    *  ✅ A new /logs  📂 folder will be created where your main (server.js or index.js) files belongs.
 

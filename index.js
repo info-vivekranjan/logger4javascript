@@ -35,11 +35,29 @@ Logger.info = function (msg) {
 
   fs.exists(filename, (exists) => {
     if (exists) {
-      let message = messageLog + " : " + msg + "\n";
+      let message = messageLog + " : "+ "[info] " + msg + "\n";
       let infoStream = fs.createWriteStream(filename, { flags: "a" });
       infoStream.write(message);
     } else {
-      let message = messageLog + " : " + msg + "\n";
+      let message = messageLog + " : " + "[info] " + msg + "\n";
+      let infoStream = fs.createWriteStream(filename);
+      infoStream.write(message);
+    }
+  });
+};
+
+Logger.error = function(msg) {
+  let messageLog = `${dayName} ${d.getFullYear()}-${
+    d.getMonth() + 1
+  }-${d.getDate()} - ${formatAMPM(new Date())}`;
+
+  fs.exists(filename, (exists) => {
+    if (exists) {
+      let message = messageLog + " : " +"[error] "+ msg + "\n";
+      let infoStream = fs.createWriteStream(filename, { flags: "a" });
+      infoStream.write(message);
+    } else {
+      let message = messageLog + " : " + "[error] " + msg + "\n";
       let infoStream = fs.createWriteStream(filename);
       infoStream.write(message);
     }
